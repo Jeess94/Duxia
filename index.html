@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duxia - Soluciones Integrales</title>
-    <!-- Tailwind CSS para un diseño ágil y moderno -->
+    <!-- Tailwind CSS for modern and responsive design -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome para los iconos sociales y de servicios -->
+    <!-- FontAwesome for social and service icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Google Fonts: Inter para un look limpio y corporativo -->
+    <!-- Google Fonts: Inter for a clean corporate look -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-green: #a8d5ba; /* Verde claro del logo (Mint) */
-            --dark-green: #1B3022;    /* Verde oscuro del logo (Forest) */
-            --soft-bg: #f2faf5;       /* Fondo verde "aire" aún más vivo y suave */
+            --primary-green: #a8d5ba; /* Mint green from logo */
+            --dark-green: #1B3022;    /* Forest green from logo */
+            --soft-bg: #f2faf5;       /* Very soft "air" green background */
         }
 
         body {
@@ -26,7 +26,7 @@
             overflow-x: hidden;
         }
 
-        /* Botones con efectos de profundidad y elevación */
+        /* Buttons with depth and elevation effects */
         .btn-action {
             background-color: var(--primary-green);
             color: var(--dark-green);
@@ -45,7 +45,7 @@
             filter: brightness(0.96);
         }
 
-        /* Enlaces del menú con subrayado dinámico */
+        /* Menu links with dynamic underline */
         .nav-link {
             position: relative;
             cursor: pointer;
@@ -70,7 +70,7 @@
             width: 100%;
         }
 
-        /* Tarjetas de servicios con sombras suaves */
+        /* Service cards with soft shadows */
         .card-service {
             background: white;
             border: 1px solid rgba(168, 213, 186, 0.2);
@@ -89,7 +89,7 @@
             border-color: var(--primary-green);
         }
 
-        /* Animación de aparición */
+        /* Fade-in animation */
         .fade-in {
             animation: fadeIn 0.6s ease-out forwards;
         }
@@ -101,7 +101,7 @@
 
         .hidden-section { display: none; }
         
-        /* Estilos de inputs y formularios */
+        /* Form inputs styles */
         input, textarea, select {
             border: 1.5px solid #e5e7eb;
             padding: 16px;
@@ -122,7 +122,7 @@
             width: auto;
         }
 
-        /* Decoración de fondo */
+        /* Decorative background blobs */
         .bg-blob {
             position: fixed;
             z-index: -1;
@@ -134,14 +134,15 @@
 </head>
 <body>
 
-    <!-- Blobs decorativos para dar "vida" al fondo -->
+    <!-- Decorative blobs to give "life" to the background -->
     <div class="bg-blob w-96 h-96 bg-green-200 top-[-10%] left-[-10%]"></div>
     <div class="bg-blob w-80 h-80 bg-emerald-100 bottom-[-10%] right-[-10%]"></div>
 
-    <!-- Navegación Moderna -->
+    <!-- Modern Navigation -->
     <nav class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-green-100 shadow-sm">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-4 cursor-pointer group" onclick="showSection('inicio')">
+                <!-- Se asume que FullLogo.png está en la raíz de tu GitHub -->
                 <img src="FullLogo.png" alt="Duxia Logo" class="logo-nav transition-transform group-hover:scale-110" onerror="this.src='https://via.placeholder.com/50?text=D'">
                 <div class="flex flex-col">
                     <span class="text-2xl font-black tracking-tighter text-slate-900 leading-none">DUXIA<span class="text-[#a8d5ba]">.</span></span>
@@ -170,7 +171,7 @@
             </p>
             <div class="flex flex-wrap justify-center gap-6 mb-24">
                 <button onclick="showSection('servicios')" class="btn-action px-12 py-4 text-lg">Nuestros Servicios</button>
-                <a href="https://wa.me/5491100000000" target="_blank" class="flex items-center gap-3 font-bold px-8 py-4 text-slate-700 border-2 border-white bg-white/50 backdrop-blur rounded-2xl hover:border-[#a8d5ba] transition-all shadow-sm">
+                <a href="https://wa.me/5491150007227" target="_blank" class="flex items-center gap-3 font-bold px-8 py-4 text-slate-700 border-2 border-white bg-white/50 backdrop-blur rounded-2xl hover:border-[#a8d5ba] transition-all shadow-sm">
                     <i class="fa-brands fa-whatsapp text-2xl text-green-500"></i> WhatsApp
                 </a>
             </div>
@@ -240,7 +241,7 @@
                     </p>
                     <div class="flex gap-4">
                         <button onclick="goToContact('Desafectación de Veraz')" class="btn-action flex-1">Consultar</button>
-                        <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20consultar%20sobre%20Desafectación%20de%20Veraz" target="_blank" class="w-14 h-14 bg-green-50 flex items-center justify-center rounded-2xl text-green-600 hover:bg-green-100 transition-colors shadow-sm">
+                        <a href="https://wa.me/5491150007227?text=Hola!%20Quiero%20consultar%20sobre%20Desafectación%20de%20Veraz" target="_blank" class="w-14 h-14 bg-green-50 flex items-center justify-center rounded-2xl text-green-600 hover:bg-green-100 transition-colors shadow-sm">
                             <i class="fa-brands fa-whatsapp text-2xl"></i>
                         </a>
                     </div>
@@ -257,7 +258,7 @@
                     </p>
                     <div class="flex gap-4">
                         <button onclick="goToContact('Marketing & Social Media')" class="btn-action flex-1">Consultar</button>
-                        <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20consultar%20sobre%20Marketing%20Digital" target="_blank" class="w-14 h-14 bg-green-50 flex items-center justify-center rounded-2xl text-green-600 hover:bg-green-100 transition-colors shadow-sm">
+                        <a href="https://wa.me/5491150007227?text=Hola!%20Quiero%20consultar%20sobre%20Marketing%20Digital" target="_blank" class="w-14 h-14 bg-green-50 flex items-center justify-center rounded-2xl text-green-600 hover:bg-green-100 transition-colors shadow-sm">
                             <i class="fa-brands fa-whatsapp text-2xl"></i>
                         </a>
                     </div>
@@ -274,7 +275,7 @@
                     </p>
                     <div class="flex gap-4">
                         <button onclick="goToContact('Soluciones en Excel')" class="btn-action flex-1">Consultar</button>
-                        <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20consultar%20sobre%20Excel" target="_blank" class="w-14 h-14 bg-green-50 flex items-center justify-center rounded-2xl text-green-600 hover:bg-green-100 transition-colors shadow-sm">
+                        <a href="https://wa.me/5491150007227?text=Hola!%20Quiero%20consultar%20sobre%20Excel" target="_blank" class="w-14 h-14 bg-green-50 flex items-center justify-center rounded-2xl text-green-600 hover:bg-green-100 transition-colors shadow-sm">
                             <i class="fa-brands fa-whatsapp text-2xl"></i>
                         </a>
                     </div>
@@ -291,7 +292,7 @@
                     </p>
                     <div class="flex gap-4">
                         <button onclick="goToContact('Gestión Virtual')" class="btn-action flex-1">Consultar</button>
-                        <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20consultar%20sobre%20Gestión%20Virtual" target="_blank" class="w-14 h-14 bg-green-50 flex items-center justify-center rounded-2xl text-green-600 hover:bg-green-100 transition-colors shadow-sm">
+                        <a href="https://wa.me/5491150007227?text=Hola!%20Quiero%20consultar%20sobre%20Gestión%20Virtual" target="_blank" class="w-14 h-14 bg-green-50 flex items-center justify-center rounded-2xl text-green-600 hover:bg-green-100 transition-colors shadow-sm">
                             <i class="fa-brands fa-whatsapp text-2xl"></i>
                         </a>
                     </div>
@@ -317,7 +318,7 @@
                                 </div>
                                 <div>
                                     <p class="text-xs font-bold uppercase tracking-widest text-green-100/50">Email</p>
-                                    <p class="font-medium">hola@duxia.com.ar</p>
+                                    <p class="font-medium">duxiasoluciones@gmail.com</p>
                                 </div>
                             </div>
                             <div class="flex items-center gap-6 group">
@@ -326,17 +327,17 @@
                                 </div>
                                 <div>
                                     <p class="text-xs font-bold uppercase tracking-widest text-green-100/50">Teléfono</p>
-                                    <p class="font-medium">+54 9 11 0000-0000</p>
+                                    <p class="font-medium">+54 9 11 5000-7227</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
                     <div class="flex gap-6 mt-16">
-                        <a href="https://instagram.com" target="_blank" class="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center rounded-2xl hover:bg-[#a8d5ba] hover:text-[#1B3022] transition-all duration-500 shadow-lg">
+                        <a href="https://www.instagram.com/duxia.soluciones/" target="_blank" class="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center rounded-2xl hover:bg-[#a8d5ba] hover:text-[#1B3022] transition-all duration-500 shadow-lg">
                             <i class="fa-brands fa-instagram text-2xl"></i>
                         </a>
-                        <a href="https://wa.me/5491100000000" target="_blank" class="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center rounded-2xl hover:bg-[#a8d5ba] hover:text-[#1B3022] transition-all duration-500 shadow-lg">
+                        <a href="https://wa.me/5491150007227" target="_blank" class="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center rounded-2xl hover:bg-[#a8d5ba] hover:text-[#1B3022] transition-all duration-500 shadow-lg">
                             <i class="fa-brands fa-whatsapp text-2xl"></i>
                         </a>
                     </div>
@@ -385,8 +386,8 @@
                 <p class="text-slate-400 max-w-sm text-sm font-medium">Potenciando tu presencia digital y financiera.</p>
             </div>
             <div class="flex justify-center space-x-12 mb-16">
-                <a href="https://instagram.com" target="_blank" class="text-2xl text-slate-300 hover:text-[#a8d5ba] transition-all transform hover:scale-125"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/5491100000000" target="_blank" class="text-2xl text-slate-300 hover:text-[#a8d5ba] transition-all transform hover:scale-125"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/duxia.soluciones/" target="_blank" class="text-2xl text-slate-300 hover:text-[#a8d5ba] transition-all transform hover:scale-125"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/5491150007227" target="_blank" class="text-2xl text-slate-300 hover:text-[#a8d5ba] transition-all transform hover:scale-125"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="text-slate-200 text-[10px] font-black tracking-[0.6em] uppercase pt-10 border-t border-slate-50">
                 © 2024 Duxia Soluciones. Buenos Aires, Argentina.
@@ -404,13 +405,13 @@
         function showSection(id) {
             const sections = ['inicio', 'servicios', 'contacto'];
             
-            // Actualizar visibilidad de secciones
+            // Update sections visibility
             sections.forEach(s => {
                 const el = document.getElementById(s);
                 el.classList.add('hidden-section');
                 el.classList.remove('fade-in');
                 
-                // Actualizar estilo de los enlaces del menú
+                // Update nav links style
                 const navLink = document.getElementById('nav-' + s);
                 if (navLink) {
                     navLink.classList.remove('active');
@@ -419,7 +420,7 @@
             
             const target = document.getElementById(id);
             target.classList.remove('hidden-section');
-            void target.offsetWidth; 
+            void target.offsetWidth; // Trigger reflow
             target.classList.add('fade-in');
             
             const activeNavLink = document.getElementById('nav-' + id);
@@ -430,7 +431,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Función para ir a contacto con un servicio seleccionado
+        // Redirect to contact with a specific service selected
         function goToContact(serviceName) {
             showSection('contacto');
             const select = document.getElementById('select-asunto');
