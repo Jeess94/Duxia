@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duxia - Soluciones Integrales</title>
+  
     <!-- Tailwind CSS for modern and responsive design -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome for social and service icons -->
@@ -142,8 +142,8 @@
     <nav class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-green-100 shadow-sm">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-4 cursor-pointer group" onclick="showSection('inicio')">
-                <!-- Se asume que FullLogo.png está en la raíz de tu GitHub -->
-                <img src="FullLogo.png" alt="Duxia Logo" class="logo-nav transition-transform group-hover:scale-110" onerror="this.src='https://via.placeholder.com/50?text=D'">
+                <!-- Imagen del logo desde tu carpeta 'imagenes' -->
+                <img src="imagenes/FullLogo.png" alt="Duxia Logo" class="logo-nav transition-transform group-hover:scale-110" onerror="this.src='https://via.placeholder.com/50?text=D'">
                 <div class="flex flex-col">
                     <span class="text-2xl font-black tracking-tighter text-slate-900 leading-none">DUXIA<span class="text-[#a8d5ba]">.</span></span>
                     <span class="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-400">Soluciones</span>
@@ -176,28 +176,32 @@
                 </a>
             </div>
 
-            <!-- Galería de 4 Fotos -->
+            <!-- Galería -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-28 max-w-5xl mx-auto">
                 <div class="group relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white transition-all hover:-translate-y-2 cursor-pointer" onclick="showSection('servicios')">
-                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=600" alt="Finanzas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                    
+                    <img src="imagenes/veraz.jpg" alt="Finanzas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#1B3022]/80 to-transparent flex items-end p-8">
                         <span class="text-white font-bold tracking-widest text-sm uppercase">Veraz</span>
                     </div>
                 </div>
                 <div class="group relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white md:mt-16 transition-all hover:-translate-y-2 cursor-pointer" onclick="showSection('servicios')">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600" alt="Marketing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                   
+                    <img src="imagenes/cm.jpg" alt="Marketing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#1B3022]/80 to-transparent flex items-end p-8">
                         <span class="text-white font-bold tracking-widest text-sm uppercase">Marketing</span>
                     </div>
                 </div>
                 <div class="group relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white transition-all hover:-translate-y-2 cursor-pointer" onclick="showSection('servicios')">
-                    <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=600" alt="Excel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                   
+                    <img src="imagenes/excel.jpg" alt="Excel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#1B3022]/80 to-transparent flex items-end p-8">
                         <span class="text-white font-bold tracking-widest text-sm uppercase">Excel</span>
                     </div>
                 </div>
                 <div class="group relative aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white md:mt-16 transition-all hover:-translate-y-2 cursor-pointer" onclick="showSection('servicios')">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600" alt="Gestión" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                  
+                    <img src="imagenes/gestionvirtual.jpg" alt="Gestión" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#1B3022]/80 to-transparent flex items-end p-8">
                         <span class="text-white font-bold tracking-widest text-sm uppercase">Sistemas</span>
                     </div>
@@ -381,7 +385,7 @@
     <footer class="bg-white border-t border-green-50 py-20 mt-20">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <div class="flex flex-col items-center mb-10">
-                <img src="FullLogo.png" alt="Duxia Logo" class="h-16 mb-6 opacity-90" onerror="this.style.display='none'">
+                <img src="imagenes/FullLogo_NoBuffer.png" alt="Duxia Logo" class="h-16 mb-6 opacity-90" onerror="this.style.display='none'">
                 <p class="text-slate-900 font-black tracking-[0.4em] uppercase text-xl mb-4">Duxia Soluciones</p>
                 <p class="text-slate-400 max-w-sm text-sm font-medium">Potenciando tu presencia digital y financiera.</p>
             </div>
@@ -390,7 +394,7 @@
                 <a href="https://wa.me/5491150007227" target="_blank" class="text-2xl text-slate-300 hover:text-[#a8d5ba] transition-all transform hover:scale-125"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <div class="text-slate-200 text-[10px] font-black tracking-[0.6em] uppercase pt-10 border-t border-slate-50">
-                © 2024 Duxia Soluciones. Buenos Aires, Argentina.
+               Duxia Soluciones
             </div>
         </div>
     </footer>
